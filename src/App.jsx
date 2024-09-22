@@ -8,7 +8,7 @@ function App() {
         return <JournalEntry key={entry.id} {...entry} />
     })
     return (
-        <div className="travel-journal">
+        <div className="app-container">
             <Navbar />
             <main>{journalEntries}</main>
             <Footer />

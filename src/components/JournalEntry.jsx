@@ -1,26 +1,26 @@
-function JournalEntry(props) {
+function JournalEntry({ imageUrl, title, location, startDate, endDate, description, googleMapsUrl }) {
     return (
-        <section className="journal-entry">
+        <article className="journal-entry">
             <div className="entry-card">
                 <div className="entry-image-container">
-                    <img src={props.imageUrl} alt={props.title} className="entry-image" />
+                    <img src={imageUrl} alt={`${title} location`} className="entry-image" />
                 </div>
                 <div className="entry-content">
                     <div className="location-info">
-                        <i className="fas fa-location-dot"></i>
-                        <p className="location">{props.location}</p>
+                        <i className="fas fa-location-dot" aria-hidden="true"></i>
+                        <p className="location">{location}</p>
                     </div>
-                    <h2 className="entry-title">{props.title}</h2>
+                    <h2 className="entry-title">{title}</h2>
                     <p className="entry-date">
-                        {props.startDate} - {props.endDate}
+                        <time dateTime={startDate}>{startDate}</time> - <time dateTime={endDate}>{endDate}</time>
                     </p>
-                    <p className="entry-description">{props.description}</p>
-                    <a href={props.googleMapsUrl} className="google-maps-link">
-                        View on Google Maps
+                    <p className="entry-description">{description}</p>
+                    <a href={googleMapsUrl} className="google-maps-link" target="_blank" rel="noopener noreferrer">
+                        View {title} on Google Maps
                     </a>
                 </div>
             </div>
-        </section>
+        </article>
     )
 }
 
