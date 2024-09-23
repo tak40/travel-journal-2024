@@ -1,12 +1,12 @@
 import logo from "../assets/logo.png"
 
-function Navbar() {
+function Header() {
     return (
-        <nav>
+        <header>
             <img src={logo} alt="logo" />
             <h1>my travel journal.</h1>
-        </nav>
+        </header>
     )
 }
 
-export default Navbar
+export default Header

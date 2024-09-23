@@ -1,8 +1,8 @@
 function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <small>© 2024 Travel Journal. All rights reserved.</small>
-        </div>
+        </footer>
     )
 }
 

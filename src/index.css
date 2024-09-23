@@ -23,7 +23,7 @@ body {
 
 /*  ----- NAVIGATION ----- */
 
-nav {
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,13 +32,13 @@ nav {
     color: white;
 }
 
-nav img {
+header img {
     width: 3em;
     height: 3em;
     margin-right: 0.625em;
 }
 
-nav h1 {
+header h1 {
     font-size: 1.125rem;
     font-weight: 500;
 }

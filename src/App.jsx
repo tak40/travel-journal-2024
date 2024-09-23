@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar"
+import Header from "./components/Header"
 import JournalEntry from "./components/JournalEntry"
 import Footer from "./components/Footer"
 import data from "./data"
@@ -9,7 +9,7 @@ function App() {
     })
     return (
         <div className="app-container">
-            <Navbar />
+            <Header />
             <main>{journalEntries}</main>
             <Footer />
         </div>
